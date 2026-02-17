@@ -1,0 +1,719 @@
+
+/* CSS for all pages */
+@font-face {
+    font-family: jetSet;
+    src: url("../fonts/jet_set/Jet\ Set.ttf");
+}
+
+@font-face {
+    font-family: gunerGraffiti;
+    src: url("../fonts/guner_graffiti/GunerGraffiti-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: jetSet;
+    list-style: none;
+}
+
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-logo {
+    margin: 1em;
+}
+
+#nav-logo img {
+    width: 7em;
+    height: auto;
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+
+
+    background-color: rgb(70, 139, 27);
+    background-clip: border-box;
+    border: ridge rgb(61, 110, 30) 5px;
+    border-radius: 15px;
+    box-shadow: 0 0.3em black;
+}
+
+.nav-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    list-style-type: none;
+}
+
+.nav-section li {
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.nav-section a:any-link {
+    color: yellow;
+    text-decoration: none;
+    text-shadow:
+        0.07em 0 black, 
+        0 0.07em black, 
+        -0.07em 0 black, 
+        0 -0.07em black, 
+        -0.07em -0.07em black, 
+        -0.07em 0.07em black, 
+        0.07em -0.07em black,
+        0.07em 0.07em black;
+
+}
+
+.nav-section a:hover {
+    opacity: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    bottom: 0.5em;
+    width: 100%;
+    padding: 0em 1em;
+}
+
+
+/* CSS for home page */
+
+#front {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logo {
+    width: 30em;
+    margin: 1em;
+}
+
+.main {
+
+
+    display:flex;
+    justify-content: center;
+}
+
+body.home {
+    background-color: rgb(127, 193, 62);
+}
+
+/* CSS for sub-pages */
+
+body.sub-page {
+    background-color:rgb(222, 190, 150);
+}
+
+.sub-page p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.sub-page-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(165, 238, 28);
+    position: sticky;
+    top: 0px;
+
+    box-shadow: 0em 0.2em 0.5em rgba(34, 34, 34, 0.473);
+}
+
+a.active-page:any-link {
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.middle {
+    background-color: antiquewhite;
+
+}
+
+h1, h2, h3, h4, h5 {
+    text-shadow:
+        0.03em 0 black, 
+        0 0.03em black, 
+        -0.03em 0 black, 
+        0 -0.03em black, 
+        -0.03em -0.03em black, 
+        -0.03em 0.03em black, 
+        0.03em -0.03em black,
+        0.03em 0.03em black;
+}
+
+h1 {
+    font-family: gunerGraffiti;
+    font-size: 7em;
+}
+
+h1.background-sub-page {
+    color: rgb(7, 182, 252);
+    text-shadow:
+        0.03em 0 rgb(65, 207, 246), 
+        0 0.03em rgb(65, 207, 246), 
+        -0.03em 0 rgb(65, 207, 246), 
+        0 -0.03em rgb(65, 207, 246), 
+        -0.03em -0.03em rgb(65, 207, 246), 
+        -0.03em 0.03em rgb(65, 207, 246), 
+        0.03em -0.03em rgb(65, 207, 246),
+        0.03em 0.03em rgb(65, 207, 246);
+}
+
+h1.gameplay-sub-page {
+    color: rgb(255, 211, 52);
+    text-shadow:
+        0.03em 0 rgb(255, 165, 39), 
+        0 0.03em rgb(255, 165, 39), 
+        -0.03em 0 rgb(255, 165, 39), 
+        0 -0.03em rgb(255, 165, 39), 
+        -0.03em -0.03em rgb(255, 165, 39), 
+        -0.03em 0.03em rgb(255, 165, 39), 
+        0.03em -0.03em rgb(255, 165, 39),
+        0.03em 0.03em rgb(255, 165, 39);
+}
+
+h1.story-sub-page {
+    color: rgb(255, 73, 73);
+    text-shadow:
+        0.03em 0 rgb(182, 9, 9), 
+        0 0.03em rgb(182, 9, 9), 
+        -0.03em 0 rgb(182, 9, 9), 
+        0 -0.03em rgb(182, 9, 9), 
+        -0.03em -0.03em rgb(182, 9, 9), 
+        -0.03em 0.03em rgb(182, 9, 9), 
+        0.03em -0.03em rgb(182, 9, 9),
+        0.03em 0.03em rgb(182, 9, 9);    
+}
+
+h1.characters-sub-page {
+    color: rgb(142, 56, 222);
+    text-shadow:
+        0.03em 0 rgb(70, 1, 134), 
+        0 0.03em rgb(70, 1, 134), 
+        -0.03em 0 rgb(70, 1, 134), 
+        0 -0.03em rgb(70, 1, 134), 
+        -0.03em -0.03em rgb(70, 1, 134), 
+        -0.03em 0.03em rgb(70, 1, 134), 
+        0.03em -0.03em rgb(70, 1, 134),
+        0.03em 0.03em rgb(70, 1, 134);
+}
+
+h1.contact-sub-page {
+    color: rgb(120, 127, 132);
+    text-shadow:
+        0.03em 0 black, 
+        0 0.03em black, 
+        -0.03em 0 black, 
+        0 -0.03em black, 
+        -0.03em -0.03em black, 
+        -0.03em 0.03em black, 
+        0.03em -0.03em black,
+        0.03em 0.03em black;
+}
+
+h2 {
+    margin: 0.2em 0px 0.5em 0px;
+}
+
+.flex-and-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.gang {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.trial-lvl li{
+    list-style: circle inside;
+    text-indent: 2.5em;
+    margin: 0.5em 0px;
+}
+
+.float-right {
+    float: right;
+}
+
+.border {
+    border: solid 4px black;
+}
+
+.gameplay-img {
+    margin: 1em 1em 4em 1em;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+}
+
+.character p {
+    width: 20em;
+}
+
+.character.left {
+    justify-content: left;
+}
+
+.character.right {
+    justify-content: right;
+}
+
+legend {
+    text-align: center;
+    font-weight: bolder;
+    margin: 5px;
+    font-size: 2em;
+}
+
+fieldset {
+    background-color: rgb(70, 139, 27);
+    background-clip: border-box;
+    border: ridge rgb(61, 110, 30) 5px;
+    border-radius: 15px;
+    box-shadow: 0 0.3em black;
+
+    margin: 0em 0em 3em 0em;
+}
+
+form.contact-form input, form.contact-form textarea, form.contact-form button{
+    width: 30em;
+    margin: 0px 0px 1em 0px;
+    padding: 2px;
+
+    text-align: center;
+    font-size: 1.1em;
+
+    border: black solid;
+    border-radius: 2px;
+    box-shadow: 0px 5px 1px black;
+}
+
+form.contact-form label {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin: 1em 0px 0px 0em;
+    text-align: center;
+}
+
+form.contact-form button {
+    margin: 1em 0px 4em 0px;
+
+    background-color: yellow;
+}
+
+form.contact-form button:hover {
+    background-color: rgb(255, 255, 185);
+}
+
+#message-button {
+    background-color: rgb(165, 238, 28);
+    width: 4em;
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+    box-shadow: 0em 0.2em 0.5em rgba(34, 34, 34, 0.473);
+
+}
+
+#message-button:hover {
+    background-color: rgb(224, 250, 176);
+}
+
+#message-button img {
+    width: 60%;
+    
+}
+
+.internal-link {
+    white-space: nowrap;
+}
+
+a#dj-professor-k, a#the-ggs, a#love-shockers, a#poison-jam, a#noise-tanks, a#captain-onishima, a#rival-showdown{
+    pointer-events: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* phones */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    body {
+        max-width: 100vw;
+        min-height: 100vh;
+    }
+
+    div, header, nav {
+        max-width: 100vw;
+    }
+
+    .home .nav-section ul {
+        align-items:center;
+        justify-content: space-around;
+                min-width: 19em;
+        padding: 0.5em;
+
+        width: 100%;
+    }
+
+    /* home */
+    
+    .home h2 {
+        font-size: 1em;
+        width: 100vw;
+        text-align: center;
+        
+    }
+
+    .home .nav-section {
+        max-width: 85vw;
+        max-height: 3em;
+
+        background-color: rgb(70, 139, 27);
+        background-clip: border-box;
+        border: ridge rgb(61, 110, 30) 5px;
+        border-radius: 15px;
+        box-shadow: 0 0.3em black;
+    }
+
+    .home nav#main-nav {
+        max-width: 30vw;
+        flex-direction: column;
+    }
+
+    .home p {
+        text-align: center;
+        margin: 1em;
+    }
+
+    .home img {
+        max-width: 19em;
+    }
+
+    .home .nav-section li{
+        font-size: 1.2em;
+    }
+
+    .home p#credit {
+        margin: 1em;
+    }
+
+    /* sub-pages */ 
+
+    .sub-page #main-nav .nav-section {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .sub-page .nav-section ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .sub-page .nav-section li {
+        min-width: 32.5vw;
+        padding: 0.2em 0.2em;
+
+        text-align: center;
+
+        background-color: rgb(70, 139, 27);
+        background-clip: border-box;
+        border: ridge rgb(61, 110, 30) 5px;
+        border-radius: 15px;
+        box-shadow: 0 0.3em black;
+
+    }
+
+    .sub-page a#nav-logo>img {
+        width: 5em;
+    }
+
+    .sub-page a {
+        font-size: 1em;
+    }
+
+    .sub-page .nav-section {
+        width:100%;
+    }
+
+    .sub-page h1 {
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    .sub-page h2 {
+        font-size: 1.3em;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .sub-page p {
+        font-size: 1em;
+    }
+
+    .sub-page .middle {
+        padding: 0.5em;
+    }
+
+    .sub-page main img {
+        min-width: 10em;
+        max-width: 90vw;
+    }
+
+    .sub-page footer {
+        position: static;
+    }
+
+    .sub-page .gameplay-img {
+        margin: 0;
+        margin-bottom: 1em;
+        min-width: 90vw;
+    }
+
+    .sub-page .gang img {
+        max-width: 20vw;
+    }
+
+    .sub-page .middle ul {
+        flex-direction: column;
+    }
+
+    .sub-page .character img {
+        max-width: 70vw;
+    }
+
+    .sub-page .character.left p {
+        text-align: left;
+    }
+
+    .sub-page .character.right p {
+        text-align: right;
+    }
+
+    form.contact-form input, form.contact-form textarea, form.contact-form button{
+        max-width: 90vw;
+    }
+}
+
+
+
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        max-width: 100vw;
+        min-height: 100vh;
+    }
+
+    div, header, nav {
+        max-width: 100vw;
+    }
+
+    body.home {
+        height: 100vh;
+    }
+
+    h2 {
+        font-size: 1em;
+        width: 100vw;
+        text-align: center;
+        
+    }
+
+    p {
+        text-align: center;
+        margin: 1em;
+    }
+
+    img {
+        max-width: 19em;
+    }
+
+    nav#main-nav {
+        max-width: 95vw;
+    }
+
+    .nav-section {
+        max-width: 30em;
+        max-height: 3em;
+        
+    }
+
+    .nav-section ul {
+        min-width: 19em;
+        padding: 0.5em;
+    }
+
+    .nav-section li{
+        font-size: 1.2em;
+    }
+
+    p#credit {
+        margin: 1em;
+    }
+
+    .sub-page-header {
+        min-height: 13vh;
+    }
+
+    .sub-page #main-nav .nav-section {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .sub-page .nav-section ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .sub-page .nav-section li {
+        min-width: 32.5vw;
+        padding: 0.2em 0.2em;
+
+        text-align: center;
+
+        background-color: rgb(70, 139, 27);
+        background-clip: border-box;
+        border: ridge rgb(61, 110, 30) 5px;
+        border-radius: 15px;
+        box-shadow: 0 0.3em black;
+
+    }
+
+    .sub-page a#nav-logo>img {
+        width: 7em;
+    }
+
+    .sub-page a {
+        font-size: 1em;
+    }
+
+    .sub-page .nav-section {
+        width:100%;
+    }
+
+    .sub-page h1 {
+        font-size: 7em;
+    }
+
+    .sub-page h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .sub-page p {
+        font-size: 1em;
+    }
+
+    .sub-page .middle {
+        padding: 1em;
+    }
+
+    .sub-page main img {
+        min-width: 10em;
+        max-width: 90vw;
+    }
+
+    form.contact-form input, form.contact-form textarea, form.contact-form button{
+        max-width: 80vw;
+        margin: 0em 2em;
+    }
+
+    .sub-page fieldset {
+        padding: 1em;
+    }
+}
+
+/* laptops/desktops */
+@media only screen and (min-width: 992px) {
+    #front {
+        background-color: rgba(255, 255, 255, 0.613);
+        padding: 3em;
+
+
+    }
+
+    .main {
+        height: 100vh;
+        background-image: url("../images/JGR_WII.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nav-section {
+        justify-content: space-around;
+    }
+
+    .nav-section ul {
+        min-width: 24em;
+        padding: 0.5em;
+    }
+
+    .nav-section li {
+        font-size: 1.5em;
+    }
+
+    .nav-section a {
+        opacity: 60%;
+    }
+
+    /* sub page */
+
+    .sub-page .middle {
+        width: 100ch;
+        padding: 0 3em 1em 3em;
+    }
+
+    form.contact-form input, form.contact-form textarea, form.contact-form button {
+        width: 30em;
+        margin: 0px 0px 1em 0px;
+        padding: 2px;
+    }
+}
+
+}
+
